@@ -25,6 +25,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Align project-page assets
+        run: cp -R dist/client/fire-view/_next dist/client/_next
       - uses: actions/configure-pages@v5
         with:
           enablement: true
