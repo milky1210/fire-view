@@ -153,7 +153,8 @@ void main() {
   float soot = state.b;
 
   velocity.y += uDt * max(0.0, temperature * 1.25 - soot * 0.05);
-  velocity.x += uDt * uWind * (0.26 + temperature * 0.08);
+  float gust = 0.62 + 0.38 * sin(uTime * 0.55 + vUv.y * 5.0);
+  velocity.x += uDt * uWind * (0.015 + temperature * 0.022) * gust;
 
   float curl = curlAt(vUv);
   vec2 curlGradient = vec2(
