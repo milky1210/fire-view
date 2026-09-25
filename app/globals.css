@@ -80,6 +80,7 @@ button, input { font: inherit; }
 .scene-label small { display: block; margin-top: 4px; color: #606977; font-size: 8px; letter-spacing: .1em; }
 .canvas-wrap { position: absolute; left: 50%; top: 50%; width: min(72vh, 69vw, 720px); aspect-ratio: 1; transform: translate(-50%, -46%); display: grid; place-items: center; }
 .fire-canvas { position: relative; z-index: 2; width: 100%; height: 100%; image-rendering: pixelated; filter: saturate(1.08) contrast(1.03); }
+.renderer-warning { position: absolute; z-index: 5; left: 50%; bottom: 22%; width: max-content; max-width: 80%; transform: translateX(-50%); color: #a2a8b1; font: 500 8px/1.5 var(--font-geist-mono); letter-spacing: .05em; }
 .grid-badge { position: absolute; z-index: 4; right: 0; top: 13%; padding: 5px 7px; border: 1px solid rgba(255,255,255,.12); background: rgba(8,11,18,.72); color: #858d98; font: 500 8px/1 var(--font-geist-mono); letter-spacing: .06em; }
 .reaction-badge { position: absolute; z-index: 4; left: 0; bottom: 11%; display: flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid currentColor; background: rgba(8,11,18,.8); font: 650 9px/1 var(--font-geist-mono); letter-spacing: .06em; box-shadow: 0 0 22px color-mix(in srgb, currentColor 24%, transparent); }
 .reaction-badge svg { width: 12px; height: 12px; }
